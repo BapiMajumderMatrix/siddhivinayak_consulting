@@ -102,7 +102,7 @@ function page() {
                                 <div className='col-8 blue-p' >
                                     <div className='company-person'> <h6 >Manas Survee </h6><Image src={link} height={30} width={30}  alt='image'/></div>
                                     
-                                    <p className='position'>CEO of Siddhi Consulting</p>
+                                    <p className='position'>CEO</p>
                                     <p>He has over 16 years of experience in Real Estate and Finance. The years have added to the expertise he has in the field. In his time of work, he has handled various large projects benefitting groups of people at the same time. Through this platform, he aims to facilitate the exchange of opportunities between investors and buyers of hospitals. He is a delight to work with and happens to be great at managing people and closing deals!</p>
                                 </div>
                             </div>
