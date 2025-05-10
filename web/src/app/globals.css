@@ -62,6 +62,24 @@ option{padding: 10px 2px;}
 .yellow-section>p{margin: 0 !important;}
 .yellow-section-row{margin: 2rem 0;width: 100%; gap: 1.2rem;}
 .contact-data{display: flex; align-items: center; gap: 2rem;}
+/* Shared button styles */
+#dropdown-basic-button {
+  background: none;
+  font-family: Montserrat, sans-serif;
+  border: none;
+  font-size: 0.84rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.ilink#dropdown-basic-button {
+  color: #000;
+}
+.inner-navigation #dropdown-basic-button{color: #000;}
+/* Dark version */
+.link#dropdown-basic-button {
+  color: #fff;
+} 
 
 /* fade effect */
 .disappear{
@@ -201,11 +219,42 @@ input[type="number"]::-webkit-outer-spin-button {
   }
   .not-found-content>a{text-decoration: none; color: #0056b3;font-size: 1.3rem; font-weight: 500;}
 
+
+  /* //Debt */
+  .debt-top>div>.r h5,  .debt-bot > div h5{font-weight: 600;}
+  .debt-top>div>.r p,  .debt-bot > div p{line-height: 160%;margin-top: .5rem;}
+  .debt-top>div>.l .icon , .debt-bot>div .icon{padding: 1rem;border-radius: 50%;height: 5rem;width: 5rem;background-color: wheat;display: flex;justify-content: center;align-items: center;}
+  .debt-top>div>.l .icon svg, .debt-bot>div .icon svg{font-size: 3rem;}
+.debt-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* adds spacing between boxes */
+}
+
+.debt-top > div {
+  flex: 1 1 calc(50% - 1rem); /* 4 boxes in a row with gap */
+  min-width: 250px; /* ensures boxes don't get too narrow */
+  box-sizing: border-box;
+  display: flex;
+  border: 1px solid #e3cc71;
+  padding: 1.5rem;border-radius: 5px;
+  align-items: center;gap: 1rem;
+}
+.yellow-box{background-color: #FBB040;padding: 3rem 4rem;margin-top: 3rem;}
+
+.debt-bot{  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; }
+.debt-bot>div{display: flex;flex-direction: column;gap: 1rem;background: #fff;  flex: 1 1 calc(18% - 1rem); /* 4 boxes in a row with gap */
+  min-width: 250px;border-radius: 8px; border:2px solid #e3cc71;padding: 1rem;}
+  .debt-bot > div .icon{text-align: center;}
 @media (min-width:1200px){
 .container{max-width: 1321px !important;}
 .cI{width: 8rem !important;}
 }
 @media (max-width:500px){
+	.debt-top > div{flex-direction: column;}
+	.yellow-box{padding: 1rem;}
 	.not-found-title {
 		font-size: 1.5rem !important;
 		margin-bottom: 0.5rem;}

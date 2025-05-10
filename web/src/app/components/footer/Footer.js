@@ -55,19 +55,19 @@ export default function Footer() {
                     </div>
                     <div className="form-bot">
                         <form ref={form} onSubmit={sendEmail} className='row input-section'>
-                            <div class="input-fcontainer col-6">
+                            <div className="input-fcontainer col-6">
                                 <Image src={profile} alt='image' className='wIcon' />
                                 <input type="text" placeholder='Name' name='from_name' autoComplete='off' required />
                             </div>
-                            <div class="input-fcontainer col-6">
+                            <div className="input-fcontainer col-6">
                                 <Image src={bmail} alt='image' className='wIcon' />
                                 <input type="email" placeholder='Email' name='email' autoComplete='off' required />
                             </div>
-                            <div class="input-fcontainer col-6" >
+                            <div className="input-fcontainer col-6" >
                                 <Image src={mobile} alt='image' className='wIcon' />
                                 <input type="number" placeholder='Phone No' name='phone' autoComplete='off' required />
                             </div>
-                            <div class="input-fcontainer col-6" >
+                            <div className="input-fcontainer col-6" >
                                 <Image src={office} alt='image' className='wIcon' height={25} />
                                 <select
                                     id="messageType"

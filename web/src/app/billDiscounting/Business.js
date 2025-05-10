@@ -71,7 +71,7 @@ function page() {
     return (
         <div ref={containerRef} className='page-content'>
             {windowWidth > 500 ? (<InnerNav/>) : (<ClosiongNav/>)}
-            <section class="gallery" data-scroll-section >
+            <section className="gallery" data-scroll-section >
             <div className="col-12 about-img-c ">
                         <div className="about-img center" style={{
                             backgroundImage: `url(${data && data.banner.url})`
@@ -85,13 +85,13 @@ function page() {
                         
                         
                         <div className='p-container'>
-                            {/* <div className="row yellow-section-row disappear" data-scroll data-scroll-class="appear" data-scroll-repeat="true">
+                            {/* <div className="row yellow-section-row disappear" data-scroll data-scroll-className="appear" data-scroll-repeat="true">
                                 <div className="col-10 yellow-section" style={{ marginLeft: '.5rem' }}><Image src={dot} alt='image'/> <p>You can optimize your cash flow</p> </div>
                             </div>
-                            <div className="row yellow-section-row disappear" data-scroll data-scroll-class="appear" data-scroll-repeat="true" >
+                            <div className="row yellow-section-row disappear" data-scroll data-scroll-className="appear" data-scroll-repeat="true" >
                                 <div className="col-10 yellow-section" style={{ marginLeft: '.5rem' }}><Image src={dot} alt='image'/> <p>You can optimize your business payment cycles</p> </div>
                             </div>
-                            <div className="row yellow-section-row disappear" data-scroll data-scroll-class="appear" data-scroll-repeat="true" >
+                            <div className="row yellow-section-row disappear" data-scroll data-scroll-className="appear" data-scroll-repeat="true" >
                                 <div className="col-10 yellow-section" style={{ marginLeft: '.5rem' }}><Image src={dot} alt='image'/> <p>Your balance sheets won't get disturbed</p> </div>
                             </div> */}
                            

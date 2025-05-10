@@ -8,7 +8,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import logo from '../../../../public/images/wlogo.svg';
 import { usePathname , useRouter } from 'next/navigation'
-
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
 function MainNav() {
 
   const pathname = usePathname()
@@ -26,10 +27,19 @@ function MainNav() {
             <Nav>
             <Link className={`link d-flex align-items-center ${pathname === '/' ? 'activeNav' : ''}`}href="/">HOME</Link>
             <Link className={`link d-flex align-items-center ${pathname === '/aboutUs' ? 'activeNav' : ''}`}href="/aboutUs">ABOUT</Link>
-            <Link className={`link d-flex align-items-center ${pathname === '/privateEqity' ? 'activeNav' : ''}`}href="/privateEqity">PRIVATE EQUITY</Link>
-            <Link className={`link d-flex align-items-center ${pathname === '/demateAccount' ? 'activeNav' : ''}`}href="/demateAccount">DEMAT ACCOUNT</Link>
-            <Link className={`link d-flex align-items-center ${pathname === '/dubaiProperty' ? 'activeNav' : ''}`}href="/dubaiProperty">DUBAI PROPERTY</Link>
-            <Link className={`link d-flex align-items-center ${pathname === '/billDiscounting' ? 'activeNav' : ''}`}href="/billDiscounting">BILL DISCOUNTING</Link>
+            {/* <Link className={`link d-flex align-items-center ${pathname === '/privateEqity' ? 'activeNav' : ''}`}href="/privateEqity">PRIVATE EQUITY</Link> */}
+            {/* <Link className={`link d-flex align-items-center ${pathname === '/demateAccount' ? 'activeNav' : ''}`}href="/demateAccount">DEMAT ACCOUNT</Link> */}
+            {/* <Link className={`link d-flex align-items-center ${pathname === '/dubaiProperty' ? 'activeNav' : ''}`}href="/dubaiProperty">DUBAI PROPERTY</Link> */}
+            <Link className={`link d-flex align-items-center ${pathname === 'portfolioManagement/' ? 'iactiveNav' : ''}`}href="/portfolioManagement">PORTFOLIO MANAGEMENT</Link>
+                        <Link className={`link d-flex align-items-center ${pathname === '/debt/' ? 'iactiveNav' : ''}`}href="/debt">DEBT</Link>
+            {/* <Link className={`link d-flex align-items-center ${pathname === '/dubaiProperty' ? 'activeNav' : ''}`}href="/dubaiProperty">DUBAI PROPERTY</Link> */}
+             <DropdownButton id="dropdown-basic-button" className='link' title=" INSURANCE" >
+                              <Dropdown.Item href="/insurance">Corporate Cyber Insurance</Dropdown.Item>
+                              <Dropdown.Item href="/professionalInsurance">Professional Indemnity Insurance
+            </Dropdown.Item>
+                              <Dropdown.Item href="/commercial">Commercial General Liability Insurance</Dropdown.Item>
+                            </DropdownButton>
+            {/* <Link className={`link d-flex align-items-center ${pathname === '/billDiscounting' ? 'activeNav' : ''}`}href="/billDiscounting">BILL DISCOUNTING</Link> */}
             <Link className={`link d-flex align-items-center ${pathname === '/contact' ? 'activeNav' : ''}`}href="/contact" style={{color:'#fff'}}>CONTACT US</Link>
             </Nav>
           </Navbar.Collapse>

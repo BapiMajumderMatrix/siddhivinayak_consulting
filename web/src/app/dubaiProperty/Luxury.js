@@ -143,7 +143,7 @@ function page() {
     return (
         <div ref={containerRef} className='page-content'>
             {windowWidth > 500 ? (<InnerNav />) : (<ClosiongNav />)}
-            <section class="gallery" data-scroll-section >
+            <section className="gallery" data-scroll-section >
                 <div className="col-12 about-img-c ">
                     <div className="about-img center" style={{
                         backgroundImage: `url(${data && data.banner.url})`

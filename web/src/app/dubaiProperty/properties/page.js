@@ -110,7 +110,7 @@ function page(props) {
   return (
     <div ref={containerRef} style={{ position: 'relative' }}>
       {windowWidth > 500 ? (<InnerNav/>) : (<ClosiongNav/>)}
-      <section class="gallery" data-scroll-section >
+      <section className="gallery" data-scroll-section >
         <div className='property-post-container'>
           <div className='propertyImageTop' style={{
             backgroundImage: `url(${propertyData && propertyData.mainImage.asset.url})`
@@ -141,7 +141,7 @@ function page(props) {
               PROJECT - CONFIGURATION
             </h2>
             <div className='property-Content-Box center'>
-              <table class="table table-bordered area-table" >
+              <table className="table table-bordered area-table" >
                 <thead>
                   <tr>
                     <th scope="col">Type</th>

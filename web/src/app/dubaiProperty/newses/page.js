@@ -82,7 +82,7 @@ function page(props) {
   return (
     <div ref={containerRef} style={{ position: 'relative' }}>
       {windowWidth > 500 ? (<InnerNav/>) : (<ClosiongNav/>)}
-      <section class="gallery" data-scroll-section >
+      <section className="gallery" data-scroll-section >
         <div className='property-post-container'>
           {propertyData && propertyData.news && 
           <div className="news-content">
