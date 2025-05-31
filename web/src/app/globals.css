@@ -42,7 +42,21 @@ span{color: #434343;font-family: Montserrat;font-size: 1.1rem;font-weight: 650;}
 .heading{color: #000;font-family: Montserrat; font-size: 1.8rem;font-weight: 600;margin: 3rem 0 1rem 0;}
 
 /* title */
-.title{color: #E7B905;font-family: Montserrat;font-size: 1.2rem;font-style: normal;font-weight: 700;}
+.title, .subheading{color: #E7B905;font-family: Montserrat;font-size: 1.2rem;font-style: normal;font-weight: 700;}
+
+ul li {
+  font-family: Montserrat;
+  margin: 0;
+  color: #252525;
+  font-size: 18px;
+  list-style-position: inside; /* optional, controls bullet alignment */
+}
+
+ul li::marker {
+  color: #E7B905;
+  font-size: 1.4em; /* increase size of the bullet */
+}
+
 /* input */
 input,textarea{background: transparent;border: 0; padding: .5rem;color: #212121;font-family: Montserrat; font-size: 1.3rem;outline: none;font-weight: 400 !important;}
 textarea{margin-top: 3rem; border: 1px solid #929292;font-family: Montserrat;}
@@ -95,8 +109,8 @@ option{padding: 10px 2px;}
 .main-container{position: relative;}
 .left-section{padding-top: 80vh; padding-left: 5rem;}
 .banner0{background: url('../../public/images/Banner1.svg'), rgb(48, 146, 222) 50% / cover no-repeat; min-height: 100vh;}
-.banner1{background: url('../../public/images/Banner2.svg'), rgb(11, 39, 95) 50% / cover no-repeat; min-height: 100vh;}
-.banner2{background: url('../../public/images/Banner3.svg'), rgb(185, 78, 11) 50% / cover no-repeat; min-height: 100vh;}
+.banner1{background: url('../../public/images/Banner2.jpg'), rgb(11, 39, 95) 50% / cover no-repeat; min-height: 100vh;}
+.banner2{background: url('../../public/images/Banner3.jpg'), rgb(185, 78, 11) 50% / cover no-repeat; min-height: 100vh;}
 .banner3{background: url('../../public/images/Banner4.svg'), rgb(222, 48, 158) 50% / cover no-repeat; min-height: 100vh;}
 .banner0 {
     background: url('/images/Banner1.svg') rgb(48, 146, 222) 50% / cover no-repeat;
@@ -293,4 +307,8 @@ input[type="number"]::-webkit-outer-spin-button {
 	.about-img{height: 60vh !important;}
 	.call-back-in{padding:3rem 1.5rem 3.5rem 1.5rem !important}
 	.about-img{margin-top: 7vh !important;}
+  .auto-img{height: auto;width: 100%;margin:.5rem}
+  .nav-logo.home-nav-logo,.closing-nav-container .nav-logo {height: 3.5rem !important; width: 14.5rem !important;}
+  th{font-size: .8rem;}
+  td{font-size: .7rem;}
 }

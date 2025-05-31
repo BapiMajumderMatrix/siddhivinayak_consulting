@@ -10,7 +10,7 @@ import { usePathname, useRouter } from 'next/navigation'
 import ye from '../../../../public/images/ye.svg'
 import yp from '../../../../public/images/yp.svg'
 import  Image  from 'next/image'
-import logo from '../../../../public/images/wlogo.svg'
+import logo from '../../../../public/images/wlogo.png'
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
@@ -41,10 +41,13 @@ export default function Footer() {
     return (
         <>
         <div className="question center">
-            <h3 className="heading res-h">Have more questions? Reach out to us at</h3>
+            <h3 className="heading res-h">Have more questions? For all queries please call us on</h3>
             <div className="c-at"><div onClick={handleCall} style={{cursor:'pointer'}}><Image src={yp} alt='img'height={22} width={22} /> <p>+91 - 8655811111</p> </div>
             <div c style={{cursor:'pointer'}} onClick={handleEmail}><Image src={ye} alt='img' height={22} width={22}/> <p>d@dconsult.in</p> </div></div>
-            <p className='bp'>Time : 10:00 AM to 6:00 PM</p>
+            <p className='bp'>Time : 10:00 AM to 7:00 PM</p>
+            <p className='bp'>Terms and conditions apply .
+Insurance is a subject matter of solicitation.
+</p>
         </div>
             <div className={`call-back ${(pathname === '/privateEqity/' || pathname === '/contact/' || pathname === '/demateAccount/' || pathname === '/dubaiProperty/' || pathname === '/billDiscounting/' || pathname === '/aboutUs/') ? 'm-b-4' : ''}`} >
                 <div className='call-back-in'>

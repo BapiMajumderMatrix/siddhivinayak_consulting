@@ -6,8 +6,8 @@ import './fundRising/fund.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'D - Consult',
-  description: 'D - Consult',
+  title: 'Dhumavati Consulting LLP',
+  description: 'Dhumavati Consulting LLP',
 }
 
 export default function RootLayout({ children }) {

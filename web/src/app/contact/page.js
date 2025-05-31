@@ -14,7 +14,7 @@ export async function generateMetadata() {
         
     }`);
     return {
-        title:'Contact D-Consult',
+        title:'Contact Dhumavati Consulting LLP',
         description: metaData[0].seoDescription,
         alternates: {
             canonical: url+'contact',

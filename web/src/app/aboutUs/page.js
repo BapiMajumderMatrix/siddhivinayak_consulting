@@ -13,7 +13,7 @@ export async function generateMetadata() {
         aboutDescription
     }`);
     return {
-        title:'About D-consult',
+        title:'About Dhumavati Consulting LLP',
         description:aboutData[0].seoDescription,
         alternates: {
             canonical: url+'aboutUs',

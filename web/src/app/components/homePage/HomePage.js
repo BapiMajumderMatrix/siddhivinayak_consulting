@@ -56,52 +56,50 @@ export default function Home() {
           <button onClick={() => scrollTo(section1)}></button>
           <button onClick={() => scrollTo(section2)}></button>
           <button onClick={() => scrollTo(section3)}></button>
-          <button onClick={() => scrollTo(section4)}></button>
+          {/* <button onClick={() => scrollTo(section4)}></button> */}
           <button onClick={() => scrollTo(section5)}></button>
         </div>
         <div ref={section1}>
           <Mysection
             video='/video/homePage.mp4'
-            headline={data && data[0] &&  data[0].heading}
+            headline={"Unlisted shares are the shares of the company that are not listed on stock exchanges"}
             goToSectionRef={sectionRefs}
             scrollTo={() => scrollTo(section2)}
             showArrow={true}
             sectionIndex={0}
             totalSections={sectionRefs.length}
             goToNextSection={() => goToNextSection(section1)}
-            link='/privateEqity/'
+            link='/unlisted-stocks/'
           />
         </div>
         <div ref={section2}>
           <Mysection
-            image="/images/Banner2.svg"
-            headline={data && data[1] && data[1].heading}
+            image="/images/Banner2.jpg"
+            headline={"Comprehensive Insurance Solutions"}
             goToSectionRef={sectionRefs}
             scrollTo={() => scrollTo(section3)}
             showArrow={true}
             sectionIndex={1}
             totalSections={sectionRefs.length}
-            link='/demateAccount/'
-            
-            
+            link='/professional-indemnity-insurance/'
             goToNextSection={() => goToNextSection(section2)}
           />
         </div>
         <div ref={section3}>
         <Mysection
-            image="/images/Banner4.svg"
-            headline={data && data[3] &&  data[3].heading}
+            image="/images/Banner3.jpg"
+            headline={"Smart Financing for Construction Projects"}
             goToSectionRef={sectionRefs}
-            scrollTo={() => scrollTo(section4)}
+            scrollTo={() => scrollTo(section5)}
             showArrow={true}
-            sectionIndex={3}
-            link='/dubaiProperty/'
+            sectionIndex={2}
+            link='/construction-finance/'
             totalSections={sectionRefs.length}
-            goToNextSection={() => goToNextSection(section4)}
+            goToNextSection={() => goToNextSection(section5)}
           />
           
         </div>
-        <div ref={section4}>
+        {/* <div ref={section4}>
         <Mysection
             image="/images/Banner3.svg"
             headline={data && data[2] && data[2].heading}
@@ -113,7 +111,7 @@ export default function Home() {
             totalSections={sectionRefs.length}
             goToNextSection={() => goToNextSection(section5)}
           />
-        </div>
+        </div> */}
         <div ref={section5}>
         <Mysection
             image="/images/Banner5.svg"
